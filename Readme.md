@@ -1,15 +1,20 @@
-Tugas UAS Struktur Data
+#Tugas UAS Struktur Data
 =======================
 
-Anggota Kelompok 
+```bash
+
+##Anggota Kelompok 
 Yosua Prima Gultom : 140810170038
 Ade Sembiring
 ALfian Billqqistshi
 Raihan M.
+```
+
+
 
 =======================
 
-Program Tiket Billing Warnet
+#Program Tiket Billing Warnet
 =============================
 
 Program ini adalah program berbasis C++ 
