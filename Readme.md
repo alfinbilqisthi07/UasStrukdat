@@ -4,10 +4,10 @@
 ```bash
 
 ##Anggota Kelompok 
-Yosua Prima Gultom : 140810170038
-Ade Sembiring
-ALfian Billqqistshi
-Raihan M.
+Yosua Prima Gultom          : 140810170038
+Ade Dwi Fatwa Sembiring     : 140810200044
+ALfian Billqqistshi         :
+Raihan M.                   :
 ```
 
 
