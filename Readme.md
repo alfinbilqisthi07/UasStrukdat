@@ -9,10 +9,9 @@ Ade Dwi Fatwa Sembiring     : 140810200044
 ALfian Billqqistshi         : 
 Raihan M.                   : 140810170032
 
+```
 
-
-=======================
-
+=============================
 #Program Tiket Billing Warnet
 =============================
 
@@ -31,12 +30,14 @@ Setiap staff akan mempertanggung jawabkan
 setiap tiket yang telah dicetak.
 
 Untuk menyimpan log transaksi dilakukan dengan
-menyimpan data dengan metode stack.
-Metode stack ini sendiri adalah metode menumpuk
-data dengan data paling baru ada diatas, sementara
-data yang sebelumnya akan berada dibawah.
+menyimpan data dengan metode queue.
+Metode queue adalah metode untuk memasukkan
+data secara berurutan dengan tipe first in
+first out. Dalam artian data yang pertama
+diinput akan lebi dulu ditampilkan untuk 
+keluar. Metode ini sangat cocok di terapkan
+pada program Billing warnet karena pada
+sistem warnet, yang pertame memesan adalah
+yang pertama memakai.
 
-Setelah data di tumpuk pada memory sementara,
-berikutnya akan di cetak pada log file berupa
-file txt pada folder program.
 

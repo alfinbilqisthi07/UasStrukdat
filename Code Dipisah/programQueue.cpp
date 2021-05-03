@@ -1,9 +1,12 @@
 /* Simple Queue Program in C++*/
 /* Data Structure C++ Programs,C++ Array Examples */
 
-#include <iostream>
-#include<conio.h>
-#include<stdlib.h>
+#include <iostream> // library input output stream
+#include <stdlib.h> // library untuk melakukan perbandingan == 
+#include <windows.h> // library untuk mengatur layar, cls
+#include "conio.h" // library untuk memanggil getsch
+#include <fstream> // library untuk menggunakan text
+#include <ctime> // library untuk fungsi waktu
 
 #define MAX_SIZE 100
 
@@ -15,6 +18,14 @@ int main() {
     int rear = 0;
     int front = 0;
     int exit = 1;
+	int jam = 1;
+	int harga = 3000;
+	time_t now = time(0);
+	int nomorpc = 10;
+	string pembeli = "Tono";
+    tm *ltm = localtime(&now);
+	string username = "Yosua";
+	
 
     cout << "\nSimple Queue Example - Array";
     do {
@@ -28,24 +39,50 @@ int main() {
                 if (rear == MAX_SIZE)
                     cout << "\n## Queue Reached Max!!";
                 else {
-                    cout << "\nEnter The Value to be Insert : ";
-                    cin>>item;
-                    cout << "\n## Position : " << rear + 1 << " , Insert Value  : " << item;
-                    arr_queue[rear++] = item;
+								system("cls"); 
+				cout << "\t\tStaff Aktif : " << username;
+				cout << "\t  ADMIN Warnet JOFIRAIDE  "<< endl; 
+				cout << "\t\t===============================================\n"; 
+				cout << "\t\t\t\t Tarif warnet : " <<endl;
+				cout << "\t\t===============================================\n"; 
+				cout << "\t\t\t\t 1  jam RP. 3000 " << endl;
+				cout << "\t\t\t\t 2  jam RP. 5000 " << endl;
+				cout << "\t\t\t\t 5  jam RP.10000 " << endl;
+				cout << "\t\t\t\t 10 jam RP.18000 " << endl;
+				cout << "\t\t\t\t BEBAS: RP. 3000 / jam " << endl;
+				cout << "\t\t===============================================\n\n"; 
+				cout << "Input Nomor PC : ";
+					cin>>item;
+				cout << "Input nama pelanggan ( masukkan ' - ' bila tidak ada ) : "<<endl;
+				cout << " Nama Pembeli : ";
+					cin>>pembeli;
+                cout << "\n## Tiket telah dibuat \n ID Pesanan : " << rear + 1 << " , Nomor PC  : " << item << ", nama pelanggan :" << pembeli;
+                arr_queue[rear++] = item;
                 }
                 break;
             case 2:
                 if (front == rear)
                     cout << "\n## Queue is Empty!";
                 else {
-                    cout << "\n## Position : " << front << " , Remove Value  :" << arr_queue[front];
+                    cout << "\n## ID Tiket : " << front << " , Remove PC  :" << arr_queue[front];
                     front++;
                 }
                 break;
             case 3:
-                cout << "\n## Queue Size : " << (rear - front);
-                for (i = front; i < rear; i++)
-                    cout << "\n## Position : " << i << " , Value  : " << arr_queue[i];
+                cout << "\n## Jumlah Penjualan : " << (rear - front)<<endl;
+                for (i = front; i < rear; i++){
+                    cout << "\t\t^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n";
+					cout << " \n\t\t ## ID Tiket : " << i ;
+					cout << " \t\tHarga RP." << harga << endl;
+					cout << "\t\t===============================================\n\n"; 
+					cout << " \t\t Paket " << jam << " jam , PC  : " << arr_queue[i];
+					cout << " \tAtas Nama : " << pembeli << endl<< endl;
+					cout << " \t\t\t  Dimulai dari Jam : " <<  ltm->tm_hour << ":" <<  ltm->tm_min << ":" <<  ltm->tm_sec << endl;
+					cout << " \t\t\t  Hingga nanti jam : " << 1 + ltm->tm_hour << ":" <<  ltm->tm_min << ":" <<  ltm->tm_sec << endl <<endl;
+					cout << " \t\t\t\t\tKasir Pengurus :" << username<<endl;
+					cout << "\t\t===============================================\n\n"; 
+					
+				}
                 break;
             default:
                 exit = 0;
