@@ -1,8 +1,8 @@
 Tugas UAS Struktur Data
 =======================
 
-Anggota Kelompok :
-Yosua Prima Gultom
+Anggota Kelompok 
+Yosua Prima Gultom : 140810170038
 Ade Sembiring
 ALfian Billqqistshi
 Raihan M.
