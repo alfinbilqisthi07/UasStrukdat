@@ -38,7 +38,9 @@ int main() {
    string user2 ="raihan";    // deklarasi user2 beserta isinya
    string password2 = "12345";  
    string user3 ="alfian";    // deklarasi user3 beserta isinya
-   string password3 = "12345";     
+   string password3 = "12345";  
+   string user4="ade";// deklrasi user4 beserta isinya   
+   string password4 ="12345";
    string login = "block";    
    i = 1;    
    system("Color 70");
@@ -129,6 +131,24 @@ int main() {
 		   kerja(); // memanggil funsi kerja
 		   } 	
 		
+        else if (user_input == user4 && pass_input == password4) {    
+	   	   system("cls");        
+		   cout << "\t\t\t\t ================\n";            
+           cout << "\t\t\t\t| Login Berhasil |" << endl;  
+		   cout << "\t\t\t\t ================\n";         
+           cout << " \n\n";          
+		   cout << " \n";            
+		   cout << "\t\t ===============================================\n"; 
+           cout << "\t\t| Selamat datang Staff Ade, selamat bekerja !|" << endl;            
+           cout << "\t\t| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |" << endl;            
+           cout << "\t\t ===============================================\n\n";  
+		   username="Ade";
+           i = 4;
+           login = "berhasil";    
+		   getch();
+		   kerja(); // memanggil funsi kerja
+		   } 	
+
        else { 
 		   cout << endl;
            cout << "\t\t\t=============================\n";            
@@ -266,5 +286,3 @@ system("cls");
 cout<< baca; // menampilkan data ke layar
 getch();
 }
-		
-
