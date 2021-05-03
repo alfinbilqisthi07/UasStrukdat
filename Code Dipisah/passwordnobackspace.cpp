@@ -21,7 +21,10 @@ int main() {
    string password2 = "12345";  
    string user3 ="alfian";    
    string password3 = "12345";     
-   string login = "block";    
+   string user4="ade";
+   string password4="12345";
+   string login = "block"; 
+   
    i = 1;    
    
   do {        
@@ -77,6 +80,22 @@ int main() {
            cout << "| ^^^^^^^^^^^^^^ |" << endl;            
            cout << " ================\n\n";  
 		   username="alfian";
+           i = 4;
+           login = "berhasil";        } 	
+
+      
+      else if (user_input == user4 && pass_input == password4) {    
+	   	   system("cls");        
+           cout << " ================\n";            
+           cout << "| Login Berhasil |" << endl;            
+           cout << " \n\n";          
+		   cout << " \n";            
+           cout << "| Selamat datang Staff Ade selamat bekerja !|" << endl;            
+           cout << " \n\n";          
+		   cout << " \n";            
+           cout << "| ^^^^^^^^^^^^^^ |" << endl;            
+           cout << " ================\n\n";  
+		   username="Ade";
            i = 4;
            login = "berhasil";        } 	
 		
