@@ -95,7 +95,7 @@ int main() {
 		   cout << " \n";            
            cout << "| ^^^^^^^^^^^^^^ |" << endl;            
            cout << " ================\n\n";  
-		   username="Ade";
+		   username="Ade ";
            i = 4;
            login = "berhasil";        } 	
 		

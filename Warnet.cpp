@@ -128,7 +128,7 @@ int main() {
            i = 4;
            login = "berhasil";    
 		   getch();
-		   kerja(); // memanggil funsi kerja/
+		   kerja(); // memanggil funsi kerja
 		   } 	
 		
         else if (user_input == user4 && pass_input == password4) {    
